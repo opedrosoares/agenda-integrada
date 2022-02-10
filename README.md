@@ -65,7 +65,7 @@ Acesse as configurações de **Integrar agenda** do Google Agenda pelo caminho C
 
 Na seção **Endereço secreto no formato iCal**, clique no ícone **Copiar para a área de transferência**. 
 
-> ![Tela Google](img/tela-google.gif) 
+> ![Tela Google](/img/tela-google.gif) 
 
 Cole nas configurações internas da extensão, Aba Bases de Agendas >> Campo URL do Calendário no formato ICS. 
 
