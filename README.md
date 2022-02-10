@@ -1,37 +1,14 @@
-## Bem vindo ao Agenda Integrada
+## Bem vindo ao Agenda Integrada ![Agenda Integrada](/dist/icons/icon-32.png)
 
-You can use the [editor on GitHub](https://github.com/pedrohsoaresadv/agenda-integrada/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+**Agenda Integrada** sincroniza a Agenda de Autoridade do portal único [Gov.br](https://www.gov.br/pt-br) com os calendários do Google Agenda e Microsoft Outlook
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Criada a partir da necessidade de simplificação do registro e da divulgação das informações relativas a compromissos e agendas públicas federais na única plataforma [Gov.br](https://www.gov.br/pt-br), a ferramenta busca os compromissos cadastrados nas agendas do Microsoft Outlook e do Google Agenda e cadastra-os automaticamente.
 
-### Markdown
+## Como começar?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Instale a extensão para o Google Chrome em:
 
-```markdown
-Syntax highlighted code block
+> [https://chrome.google.com/webstore/detail/agenda-integrada/hdakgafffkflmfpejnbafpkgmlfjelcb](https://chrome.google.com/webstore/detail/agenda-integrada/hdakgafffkflmfpejnbafpkgmlfjelcb)
 
-# Header 1
-## Header 2
-### Header 3
+## Como utilizar?
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pedrohsoaresadv/agenda-integrada/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
