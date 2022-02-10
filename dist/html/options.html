@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="pt-br">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>Configura&ccedil;&otilde;es Gerais</title>
+    <script src="../js/lib/jquery-3.4.1.min.js"></script>
+    <script src="../js/lib/jquery-ui.min.js"></script>
+    <script src="../js/lib/jmespath.min.js"></script>
+    <script src="../js/lib/moment.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="page.css">
+    <link rel="stylesheet" type="text/css" href="../css/fontawesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/jquery-ui.css">
+</head>
+<body class="SEIPro">
+    <div class="panel heading">
+        <div class="importExport">
+            <button id="export" class="button-flat"><i class="fa fa-download"></i> Baixar <span class="btn_text">Configura&ccedil;&otilde;es</span> </button>
+			<span class="importBtn">
+                <input type="file" id="selectFiles" value="Import" style="display: none" />
+				<button id="import" class="button-flat"><i class="fa fa-file-upload"></i> Carregar <span class="btn_text">Configura&ccedil;&otilde;es</span></button>
+			</span>
+			<button class="save button-flat button-light" style="float:right" style="width: 100px"><i class="fas fa-save"></i> Salvar</button>
+            <div id="alertaBoxPro" style="display: none;"></div>
+        </div>
+        <h1><img src="../icons/icon-32.png" style="vertical-align: middle;margin-right: 10px;">  <span class="title">Agenda Integrada</span></h1>
+    </div>
+    <div class="panel options-panel options-profile" id="options-tabs">
+        <ul>
+            <li><a href="#options-lista"><i class="fas fa-calendar-check"></i> Agendas de Autoridades</a></li>
+            <li><a href="#options-database"><i class="fas fa-database"></i> Bases de Agendas</a></li>
+            <li><a href="#options-functions"><i class="fas fa-cog"></i> Geral</a></li>
+        </ul>
+        <div id="options-lista"></div>
+        <div id="options-database">
+            <div id="options-profile">
+                <table id="options-table-0" class="options-table">
+                    <tr>
+                        <td colspan="2">
+                            <i id="sca-removeProfile-0" class="option-ref removeProfile fas fa-trash-alt"></i>
+                            <h2>Agendas</h2>
+                        </td>
+                    </tr>
+                     <tr>
+                        <th>
+                            <label class="option-ref" id="sca-label-baseName-0" for="sca-baseName-0">Nome da Autoridade *</label>
+                        </th>
+                        <td>
+                            <input id="sca-baseName-0" class="sca-baseName option-ref input-config-pro" type="text" placeholder="Nome da Autoridade" data-name-input="baseName" style="width: 50%;" value="" required/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>
+                            <label class="option-ref" id="sca-label-baseTipo-0" for="sca-baseTipo-0">Tipo da Agenda *</label>
+                        </th>
+                        <td>
+                            <select id="sca-baseTipo-0" class="sca-baseTipo option-ref input-config-pro" data-name-input="baseTipo" style="width: 100%;" required>
+                                <option value="outlook">Calend&aacute;rio do Outlook</option>
+                                <option value="google">Google Agenda</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr class="api">
+                        <th>
+                            <label class="option-ref" id="sca-label-URL_ICS-0" for="sca-URL_ICS-0">URL do Calend&aacute;rio no formato ICS *</label>
+                        </th>
+                        <td>
+                            <input id="sca-URL_ICS-0" class="sca-URL_ICS option-ref input-config-pro" type="text" placeholder="Insira o caminho para o calend&aacute;rio no formato ICS" data-name-input="URL_ICS" value=""/>
+                        </td>
+                    </tr>
+                    <tr>
+                    <tr class="api">
+                        <th>
+                            <label class="option-ref" id="sca-label-URL_GOV-0" for="sca-URL_GOV-0">URL da Agenda no Gov.br *</label>
+                        </th>
+                        <td>
+                            <input id="sca-URL_GOV-0" class="sca-URL_GOV option-ref input-config-pro" type="text" placeholder="Insira o caminho para o servidor de API" data-name-input="URL_GOV" value=""/>
+                        </td>
+                    </tr>
+                    <tr class="api">
+                        <th>
+                            <label class="option-ref" id="sca-label-URL_SYNC-0" for="sca-URL_SYNC-0">URL do servi&ccedil;o de integra&ccedil;&atilde;o *</label>
+                        </th>
+                        <td>
+                            <input id="sca-URL_SYNC-0" class="sca-URL_SYNC option-ref input-config-pro" type="text" placeholder="Insira o caminho para o servidor de API" data-name-input="URL_SYNC" value="https://seipro.app/ical/"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <hr>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <table>
+                <tr id="footer">
+                    <td>
+                        <button id="new"><i class="fas fa-database"></i> Adicionar nova base</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="options-functions">
+            <table class="tableZebra">
+                <tr>
+                    <td>
+                        <p>
+                            <i class="iconPopup fa fa-sync-alt cinzaColor"></i><span class="info">Sincronizar outras agendas automaticamente (caso existam)</span>
+                            <a class="manual" href="/pages/SINCRONIZARTUDO.html" target="_blank" style="float: right;"><i class="iconPopup fa fa-info-circle" style="color: #C0C0C0 !important;"></i></a>
+                        </p>
+                    </td>
+                    <td>
+                           <div class="onoffswitch">
+                               <input type="checkbox" data-name="sincronizartudo" name="onoffswitch" class="onoffswitch-checkbox" id="itemConfigGeral_sincronizartudo" tabindex="0">
+                               <label class="onoffswitch-label" for="itemConfigGeral_sincronizartudo"></label>
+                           </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="padding: 0;">
+                        <table>
+                            <tr>
+                                <td style="width: 60%;">
+                                    <span>
+                                        <i class="iconPopup fa fa-calendar-plus azulColor"></i><span class="info">Pesquisar (n) dias antes e depois da data atual</span>
+                                    </span>
+                                </td>
+                                <td style="width: 40%; text-align: right;">
+                                    <input type="number" id="itemConfigGeral_diaspesquisa" max="30" min="1" data-name="diaspesquisa" value="7">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="importExport" style="margin: 10px auto; padding-bottom: 50px;">
+        <button class="save button-flat button-light" style="float:right" style="width: 100px"><i class="fas fa-save"></i> Salvar</button>
+    </div>
+    <script src="options.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+{
+  "manifest_version": 3,
+  "name": "Agendada Integrada",
+  "short_name": "Agendada Integrada",
+  "description": "Sincroniza a Agenda de Autoridade do portal único Gov.br com os calendários do Google Agenda e Microsoft Outlook",
+  "version": "0.1.1",
+  "author": "Pedro Henrique Soares",
+  "homepage_url": "https://pedrohsoaresadv.github.io/agenda-integrada/",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "options_page": "html/options.html",
+  "options_ui": {
+    "page": "html/options.html",
+    "open_in_tab": true
+  },
+  "permissions": [
+    "storage",
+    "contextMenus"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "pedrohsoares.adv@gmail"
+    }
+  },
+  "applications": {
+    "gecko": {
+      "id": "pedrohsoares.adv@gmail",
+      "strict_min_version": "52.0"
+    }
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "js/lib/jquery-3.4.1.min.js",
+        "js/init.js",
+        "js/agendador.js"
+      ],
+      "all_frames": false,
+      "matches": [
+        "*://www.gov.br/*"
+      ]
+    }
+  ],
+  "action": {
+    "default_title": "Agenda Integrada",
+    "default_popup": "html/options.html"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "js/agendador.js",
+        "js/lib/jquery-3.4.1.min.js",
+        "js/lib/moment.min.js",
+        "js/lib/jmespath.min.js"
+        ],
+      "matches": [
+        "*://www.gov.br/*"
+      ]
+    }
+  ]
+}
