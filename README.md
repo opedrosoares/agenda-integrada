@@ -41,6 +41,47 @@ Caso a sincronização não seja iniciata automaticamente, clique no link **"Sin
 A extensão irá pesquisar e cadastrar eventos 7 (sete) dias anteriores e posteriores à data atual. 
 O número de dias de pesquisa poderá ser alterado dentro das configurações internas da extensão (**Aba Geral >> Pesquisar (n) dias antes e depois da data atual**)
 
+## Quais informações são sincronizadas
+
+A **Agenda Integrada** encontra as seguintes informações disponíveis nos calendários do Microsoft Outlook ou Google Agenda:
+
+| Gov.br  |  Outlook  ou  Google Agenda  |
+| ------------------- | ------------------- | ------------------- |
+|  Nome da autoridade |  - (Não sincronizado) |
+|  Data e hora de início |  Data e hora do início do evento  |
+|  Date e hora de término |  Data e hora do término do evento  |
+|  Compromisso |  Título do evento |
+|  Solicitante |  Frase encontrada dentro da descrição do evento, logo após a palavra "Solicitante:"  |
+|  Outros participantes |  Frase encontrada dentro da descrição do evento, logo após a palavra "Participantes:" |
+|  Pauta |  Frase encontrada dentro da descrição do evento, logo após a palavra "Pauta:" |
+|  Local do compromisso |  Local do evento |
+|  Comentário interno (opcional) |  - (Não sincronizado) |
+
+Para manter o máximo de transparência e aderência ao [Decreto nº 10.889, de 9 de dezembro de 2021](http://www.planalto.gov.br/ccivil_03/_Ato2019-2022/2021/Decreto/D10889.htm), mantenha ao menos os seguintes dados:
+
+> Art. 11.  O agente público de que trata o art. 2º deverá registrar e publicar, por meio do e-Agendas ou por meio de sistema próprio, observado o disposto no art. 7º, as informações sobre:
+> I - sua participação em compromisso público, ocorrido presencialmente ou não, ainda que fora do local de trabalho, com ou sem agendamento prévio, em território nacional ou estrangeiro, com, no mínimo:
+> a) assunto;
+> b) local;
+> c) data;
+> d) horário;
+> e) lista de participantes; e
+> (...)
+
+> ![Tela Outlook Exemplo](/img/tela-exemplo-outlook.png) 
+> 
+> ![Tela GovBr Exemplo](/img/tela-exemplo-outlook.png) 
+
+### Eventos privados
+
+Eventos internos ou privados que não desejam ser sincronizados no [Gov.br](https://www.gov.br/pt-br) podem ser bloqueados para visualização externa.
+
+Para isso, edite o evento no Microsoft Outlook ou Google Agenda e altere seu status para **Privado**:
+
+> ![Tela Privado Outlook](/img/tela-privado-outlook.png) 
+
+> ![Tela Privado Google](/img/tela-privado-google.png) 
+
 ## Obtendo URL do Calendário do Microsoft Outlook ou do Google Agenda
 
 ### Microsoft Outlook
