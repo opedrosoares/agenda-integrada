@@ -79,7 +79,7 @@ Para manter o máximo de transparência e aderência ao [Decreto nº 10.889, de 
 
 Eventos internos ou privados que não desejam ser sincronizados no [Gov.br](https://www.gov.br/pt-br) podem ser bloqueados para visualização externa.
 
-Para isso, edite o evento no Microsoft Outlook ou Google Agenda e altere seu status para **Privado**:
+Para isso, edite o evento e altere seu status para **Privado** (Microsoft Outlook) ou **Particular** (Google Agenda):
 
 > <img src="https://raw.githubusercontent.com/pedrohsoaresadv/agenda-integrada/main/img/tela-privado-outlook.png" data-canonical-src="https://raw.githubusercontent.com/pedrohsoaresadv/agenda-integrada/main/img/tela-privado-outlook.png" width="450"/>
 
