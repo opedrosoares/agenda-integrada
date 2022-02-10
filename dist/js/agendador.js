@@ -161,7 +161,7 @@ function getDateSync(dataCompromisso) {
         return getCompromissosAgenda(urlAgendaPublica, dataCompromisso).then(dataAgendaPublica => {
 
             var arrayAgendaIntegrada = (typeof dataAgendaIntegrada[dataCompromisso] !== 'undefined' && dataAgendaIntegrada[dataCompromisso].length > 0) 
-                ? jmespath.search(dataAgendaIntegrada[dataCompromisso],"[?summary!='F\u00E9rias'] | [?summary!='Private Appointment']")
+                ? jmespath.search(dataAgendaIntegrada[dataCompromisso],"[?summary!='F\u00E9rias'] | [?class!='PRIVATE'] | [?status=='CONFIRMED']")
                 : [];
 
             if (arrayAgendaIntegrada.length > 0) {
@@ -226,7 +226,7 @@ function getDateSync(dataCompromisso) {
         }).catch(function errorHandler(error) {
             if (error.status == 404) {
                 var arrayAgendaIntegrada = (typeof dataAgendaIntegrada[dataCompromisso] !== 'undefined' && dataAgendaIntegrada[dataCompromisso].length > 0) 
-                    ? jmespath.search(dataAgendaIntegrada[dataCompromisso],"[?summary!='F\u00E9rias'] | [?summary!='Private Appointment']")
+                    ? jmespath.search(dataAgendaIntegrada[dataCompromisso],"[?summary!='F\u00E9rias'] | [?class!='PRIVATE'] | [?status=='CONFIRMED']")
                     : [];
                     
                 if (arrayAgendaIntegrada.length > 0) {
