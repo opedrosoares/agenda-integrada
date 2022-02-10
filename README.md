@@ -1,37 +1,76 @@
-## Bem vindo ao Agenda Integrada
+## Bem vindo ao Agenda Integrada ![Agenda Integrada](/dist/icons/icon-32.png)
 
-You can use the [editor on GitHub](https://github.com/pedrohsoaresadv/agenda-integrada/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+**Agenda Integrada** sincroniza a Agenda de Autoridade do portal único [Gov.br](https://www.gov.br/pt-br) com os calendários do Google Agenda e Microsoft Outlook.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Criada a partir da necessidade de simplificação do registro e da divulgação das informações relativas a compromissos e agendas públicas federais, a ferramenta busca os compromissos cadastrados nas agendas do Microsoft Outlook ou do Google Agenda e cadastra-os automaticamente na única plataforma [Gov.br](https://www.gov.br/pt-br)
 
-### Markdown
+## Como começar?
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Instale a extensão para o Google Chrome em:
 
-```markdown
-Syntax highlighted code block
+> [https://chrome.google.com/webstore/detail/agenda-integrada/hdakgafffkflmfpejnbafpkgmlfjelcb](https://chrome.google.com/webstore/detail/agenda-integrada/hdakgafffkflmfpejnbafpkgmlfjelcb)
 
-# Header 1
-## Header 2
-### Header 3
+## Como utilizar?
 
-- Bulleted
-- List
+Antes de iniciar o uso é necessário cadastrar nova **Base de Agenda**.
 
-1. Numbered
-2. List
+Clique no ícone da extensão e acesse suas configurações internas. Adicione nova base preenchendo os seguintes campos:
 
-**Bold** and _Italic_ and `Code` text
+> **Nome da Autoridade:** Título da agenda, utilizado apena para fins de referência.
 
-[Link](url) and ![Image](src)
-```
+> **Tipo de Agenda:** Selecione Microsoft Outlook ou Google Agenda.
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+> **URL do Calendário no formato ICS:** Link disponibilizado pelo provedor de calendário. Consulte a Seção [Obtendo URL do Calendário do Microsoft Outlook ou do Google Agenda](README.md#obtendo-url-do-calendário-do-microsoft-outlook-ou-do-google-agenda) para maiores informações.
 
-### Jekyll Themes
+> **URL da Agenda no Gov.br:** Link da agenda da autoridade no portal único [Gov.br](https://www.gov.br/pt-br).
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pedrohsoaresadv/agenda-integrada/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+> **URL do serviço de integração:** Link da API de leitura do arquivo ICS. Por padrão é fornecido um serviço gratuíto em [https://seipro.app/ical/](https://seipro.app/ical/). Consulte a Seção [Criando minha própria API de leitura];
 
-### Support or Contact
+## Como sincronizar?
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+Após cadastrada as informações de integração da Agenda, acesse a lista e inicie a sincronização.
+
+Caso a plataforma Plone não esteja logada, você será direcionado para o login do portal único [Gov.br](https://www.gov.br/pt-br).
+
+Caso a sincronização não seja iniciata automaticamente, clique no link **"Sincronizar Agenda"** disponível na barra superior da página.
+
+A extensão irá pesquisar e cadastrar eventos 7 (sete) dias anteriores e posteriores à data atual. 
+O número de dias de pesquisa poderá ser alterado dentro das configurações internas da extensão (**Aba Geral >> Pesquisar (n) dias antes e depois da data atual**)
+
+## Obtendo URL do Calendário do Microsoft Outlook ou do Google Agenda
+
+### Microsoft Outlook
+
+Acesse as configurações dos **Calendários Compartilhados** do Outlook em [https://outlook.office.com/calendar/options/calendar/SharedCalendars](https://outlook.office.com/calendar/options/calendar/SharedCalendars) ou pelo caminho Configurações >> Calendário >> Calendários compartilhados.
+
+Na seção **Publicar um calendário**, selecione o calendário desejado. 
+
+Selecione as permissões **Pode exibir todos os detalhes**; clique em **Publicar**.
+
+Copie o link do calendário em formato ICS. 
+
+Cole nas configurações internas da extensão, Aba Bases de Agendas >> Campo URL do Calendário no formato ICS. 
+
+Clique em **Salvar**
+
+### Google Agenda
+
+Acesse as configurações de **Integrar agenda** do Google Agenda pelo caminho Configurações >> Configurações das minhas agendas >> Integrar agenda.
+
+Na seção **Endereço secreto no formato iCal**, clique no ícone **Copiar para a área de transferência**. 
+
+Cole nas configurações internas da extensão, Aba Bases de Agendas >> Campo URL do Calendário no formato ICS. 
+
+Clique em **Salvar**
+
+## Sincronizando mais de uma Agenda
+
+É possível adicionar mais de uma **Base de Agenda** para sincronia, clicando no botão **Adicionar nova base**.
+
+Acesse a Aba Geral e ative a opção **Sincronizar outras agendas automaticamente (caso existam)**. Ao final do processo de sincronia a próxima Agenda cadastrada será automaticamente sincronizada.
+
+## Criando sua própria API de leitura
+
+Para que seja possível interpretar as informações de compromissos agendados nos calendários no Microsoft Outlook ou Google Agenda é utilizado um serviço de API simples, disponibilizado gratuitamente no endereço [https://seipro.app/ical/](https://seipro.app/ical/).
+
+Caso deseje utilizar sua própria API de leitura, utilize os arquivos da pasta [/ICAL](/ical) em um servidor de dados PHP. Aponte para o domínio criado nas configurações da Agenda: Aba Bases de Agenda >> Campo URL do serviço de integração
