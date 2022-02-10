@@ -2,7 +2,7 @@
 
 **Agenda Integrada** sincroniza a Agenda de Autoridade do portal único [Gov.br](https://www.gov.br/pt-br) com os calendários do Google Agenda e Microsoft Outlook.
 
-Criada a partir da necessidade de simplificação do registro e da divulgação das informações relativas a compromissos e agendas públicas federais, a ferramenta busca os compromissos cadastrados nas agendas do Microsoft Outlook ou do Google Agenda e cadastra-os automaticamente na única plataforma [Gov.br](https://www.gov.br/pt-br)
+Criada a partir da necessidade de simplificação do registro e da divulgação das informações relativas a compromissos e agendas públicas federais, a ferramenta busca os compromissos inseridos nas agendas do Microsoft Outlook ou do Google Agenda para cadastrá-los automaticamente na única plataforma [Gov.br](https://www.gov.br/pt-br)
 
 ## Como começar?
 
