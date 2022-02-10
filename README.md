@@ -24,7 +24,7 @@ Clique no ícone da extensão e acesse suas configurações internas. Adicione u
 
 > **URL da Agenda no Gov.br:** Link da agenda da autoridade no portal único [Gov.br](https://www.gov.br/pt-br).
 
-> **URL do serviço de integração:** Link da API de leitura do arquivo ICS. Por padrão é fornecido um serviço gratuíto em [https://seipro.app/ical/](https://seipro.app/ical/). Consulte a Seção [Criando sua própria API de leitura](README.md#criando-sua-própria-api-de-leitura).
+> **URL do serviço de integração:** Link da API de leitura do arquivo ICS. Por padrão é fornecido um serviço gratuíto em [https://seipro.app/ical/](https://seipro.app/ical/). Caso deseje utilizar um serviço exclusivo, consulte a Seção [Criando sua própria API de leitura](README.md#criando-sua-própria-api-de-leitura).
 
 > ![Tela Base Agenda](/img/tela-base-agenda.gif) 
 
