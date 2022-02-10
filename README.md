@@ -81,7 +81,7 @@ Eventos internos ou privados que não desejam ser sincronizados no [Gov.br](http
 
 Para isso, edite o evento no Microsoft Outlook ou Google Agenda e altere seu status para **Privado**:
 
-> <img src="https://github.com/pedrohsoaresadv/agenda-integrada/raw/master/img/tela-privado-outlook.png" data-canonical-src="https://github.com/pedrohsoaresadv/agenda-integrada/raw/master/img/tela-privado-outlook.png" width="450"/>
+> <img src="https://raw.githubusercontent.com/pedrohsoaresadv/agenda-integrada/main/img/tela-privado-outlook.png" data-canonical-src="https://raw.githubusercontent.com/pedrohsoaresadv/agenda-integrada/main/img/tela-privado-outlook.png" width="450"/>
 
 > <img src="https://raw.githubusercontent.com/pedrohsoaresadv/agenda-integrada/main/img/tela-privado-google.png" data-canonical-src="https://raw.githubusercontent.com/pedrohsoaresadv/agenda-integrada/main/img/tela-privado-google.png" width="450"/>
 
