@@ -182,6 +182,11 @@ class iCal_Event
 	/**
 	 * @var string
 	 */
+	public $class;
+
+	/**
+	 * @var string
+	 */
 	public $created;
 
 	/**
@@ -322,6 +327,10 @@ class iCal_Event
 		// Status
 		if (preg_match('`^STATUS:(.*)$`m', $content, $m))
 			$this->status = trim($m[1]);
+
+		// Class
+		if (preg_match('`^CLASS:(.*)$`m', $content, $m))
+			$this->class = trim($m[1]);
 
 
 		// Created
