@@ -46,7 +46,7 @@ O número de dias de pesquisa poderá ser alterado dentro das configurações in
 A **Agenda Integrada** encontra as seguintes informações disponíveis nos calendários do Microsoft Outlook ou Google Agenda:
 
 | Gov.br  |  Outlook  ou  Google Agenda  |
-| ------------------- | ------------------- | ------------------- |
+| ------------------- | ------------------- | 
 |  Nome da autoridade |  - (Não sincronizado) |
 |  Data e hora de início |  Data e hora do início do evento  |
 |  Date e hora de término |  Data e hora do término do evento  |
@@ -60,17 +60,20 @@ A **Agenda Integrada** encontra as seguintes informações disponíveis nos cale
 Para manter o máximo de transparência e aderência ao [Decreto nº 10.889, de 9 de dezembro de 2021](http://www.planalto.gov.br/ccivil_03/_Ato2019-2022/2021/Decreto/D10889.htm), mantenha ao menos os seguintes dados:
 
 > Art. 11.  O agente público de que trata o art. 2º deverá registrar e publicar, por meio do e-Agendas ou por meio de sistema próprio, observado o disposto no art. 7º, as informações sobre:
-> I - sua participação em compromisso público, ocorrido presencialmente ou não, ainda que fora do local de trabalho, com ou sem agendamento prévio, em território nacional ou estrangeiro, com, no mínimo:
-> a) assunto;
-> b) local;
-> c) data;
-> d) horário;
-> e) lista de participantes; e
-> (...)
-
-> ![Tela Outlook Exemplo](/img/tela-exemplo-outlook.png) 
 > 
-> ![Tela GovBr Exemplo](/img/tela-exemplo-outlook.png) 
+> I - sua participação em compromisso público, ocorrido presencialmente ou não, ainda que fora do local de trabalho, com ou sem agendamento prévio, em território nacional ou estrangeiro, com, no mínimo:
+> 
+> a) assunto;
+> 
+> b) local;
+> 
+> c) data;
+> 
+> d) horário;
+> 
+> e) lista de participantes; e
+> 
+> (...)
 
 ### Eventos privados
 
@@ -78,9 +81,9 @@ Eventos internos ou privados que não desejam ser sincronizados no [Gov.br](http
 
 Para isso, edite o evento no Microsoft Outlook ou Google Agenda e altere seu status para **Privado**:
 
-> ![Tela Privado Outlook](/img/tela-privado-outlook.png) 
+> <img src="https://github.com/pedrohsoaresadv/agenda-integrada/raw/master/img/tela-privado-outlook.png" data-canonical-src="https://github.com/pedrohsoaresadv/agenda-integrada/raw/master/img/tela-privado-outlook.png" width="450"/>
 
-> ![Tela Privado Google](/img/tela-privado-google.png) 
+> <img src="https://github.com/pedrohsoaresadv/agenda-integrada/raw/master/img/tela-privado-google.png" data-canonical-src="https://github.com/pedrohsoaresadv/agenda-integrada/raw/master/img/tela-privado-google.png" width="450"/>
 
 ## Obtendo URL do Calendário do Microsoft Outlook ou do Google Agenda
 
@@ -123,3 +126,10 @@ Acesse a Aba Geral e ative a opção **Sincronizar outras agendas automaticament
 Para que seja possível interpretar as informações de compromissos agendados nos calendários no Microsoft Outlook ou Google Agenda a extensão **Agenda Integrada** utiliza um serviço de API simples, disponibilizado gratuitamente no endereço [https://seipro.app/ical/](https://seipro.app/ical/).
 
 Caso deseje utilizar sua própria API de leitura, baixe os arquivos da pasta [/ICAL](/ical) e disponibilize-os um servidor de dados PHP. Aponte para o domínio criado nas configurações da Agenda: Aba Bases de Agenda >> Campo URL do serviço de integração. É indispensável a utilização de um endereço externo via protocolo https.
+
+
+## Deseja contribuir?
+
+Caso deseja reportar um erro ou solicitar um recurso, acesse [Issue](https://github.com/pedrohsoaresadv/sei-legis/issues) no [Projeto GitHub](https://github.com/pedrohsoaresadv/sei-legis/) e adicione sua requisição.
+
+Ou envie um e-mail para [pedrohsoares.adv@gmail.com](mailto:pedrohsoares.adv@gmail.com)
