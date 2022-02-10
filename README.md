@@ -43,11 +43,28 @@ O número de dias de pesquisa poderá ser alterado dentro das configurações in
 
 Acesse as configurações dos **Calendários Compartilhados** do Outlook em [https://outlook.office.com/calendar/options/calendar/SharedCalendars](https://outlook.office.com/calendar/options/calendar/SharedCalendars) ou pelo caminho Configurações >> Calendário >> Calendários compartilhados.
 
-Na seção **Publicar um calendário**, selecione o calendário desejado; selecione as permissões **Pode exibir todos os detalhes**; clique em **Publicar**.
-Copie o link do calendário em formato ICS. Cole nas configurações internas da extensão, Aba Bases de Agendas >> Campo URL do Calendário no formato ICS. Clique em **Salvar**
+Na seção **Publicar um calendário**, selecione o calendário desejado. 
+
+Selecione as permissões **Pode exibir todos os detalhes**; clique em **Publicar**.
+
+Copie o link do calendário em formato ICS. 
+
+Cole nas configurações internas da extensão, Aba Bases de Agendas >> Campo URL do Calendário no formato ICS. 
+
+Clique em **Salvar**
 
 ### Google Agenda
 
 Acesse as configurações de **Integrar agenda** do Google Agenda pelo caminho Configurações >> Configurações das minhas agendas >> Integrar agenda.
 
-Na seção **Endereço secreto no formato iCal**, clique no ícone **Copiar para a área de transferência**. Cole nas configurações internas da extensão, Aba Bases de Agendas >> Campo URL do Calendário no formato ICS. Clique em **Salvar**
+Na seção **Endereço secreto no formato iCal**, clique no ícone **Copiar para a área de transferência**. 
+
+Cole nas configurações internas da extensão, Aba Bases de Agendas >> Campo URL do Calendário no formato ICS. 
+
+Clique em **Salvar**
+
+## Sincronizando mais de uma Agenda
+
+É possível adicionar mais de uma **Base de Agenda** para sincronia, clicando no botão **Adicionar nova base**.
+
+Acesse a Aba Geral e ative a opção **Sincronizar outras agendas automaticamente (caso existam)**. Ao final do processo de sincronia a próxima Agenda cadastrada será automaticamente sincronizada.
