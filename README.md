@@ -2,19 +2,19 @@
 
 **Agenda Integrada** sincroniza a Agenda de Autoridade do portal único [Gov.br](https://www.gov.br/pt-br) com os calendários do Google Agenda e Microsoft Outlook.
 
-Criada a partir da necessidade de simplificação do registro e da divulgação das informações relativas a compromissos e agendas públicas federais, a ferramenta busca os compromissos cadastrados nas agendas do Microsoft Outlook ou do Google Agenda e cadastra-os automaticamente na única plataforma [Gov.br](https://www.gov.br/pt-br)
+Criada a partir da necessidade de simplificação do registro e da divulgação das informações relativas a compromissos e agendas públicas federais, a ferramenta busca os compromissos inseridos nas agendas do Microsoft Outlook ou do Google Agenda para cadastrá-los automaticamente na única plataforma [Gov.br](https://www.gov.br/pt-br)
 
 ## Como começar?
 
 Instale a extensão para o Google Chrome em:
 
-> [https://chrome.google.com/webstore/detail/agenda-integrada/hdakgafffkflmfpejnbafpkgmlfjelcb](https://chrome.google.com/webstore/detail/agenda-integrada/hdakgafffkflmfpejnbafpkgmlfjelcb)
+> [https://chrome.google.com/webstore/detail/agendada-integrada/hdakgafffkflmfpejnbafpkgmlfjelcb](https://chrome.google.com/webstore/detail/agendada-integrada/hdakgafffkflmfpejnbafpkgmlfjelcb)
 
 ## Como utilizar?
 
 Antes de iniciar o uso é necessário cadastrar nova **Base de Agenda**.
 
-Clique no ícone da extensão e acesse suas configurações internas. Adicione nova base preenchendo os seguintes campos:
+Clique no ícone da extensão e acesse suas configurações internas. Adicione uma nova base preenchendo os seguintes campos:
 
 > **Nome da Autoridade:** Título da agenda, utilizado apena para fins de referência.
 
@@ -24,7 +24,7 @@ Clique no ícone da extensão e acesse suas configurações internas. Adicione n
 
 > **URL da Agenda no Gov.br:** Link da agenda da autoridade no portal único [Gov.br](https://www.gov.br/pt-br).
 
-> **URL do serviço de integração:** Link da API de leitura do arquivo ICS. Por padrão é fornecido um serviço gratuíto em [https://seipro.app/ical/](https://seipro.app/ical/). Consulte a Seção [Criando minha própria API de leitura].
+> **URL do serviço de integração:** Link da API de leitura do arquivo ICS. Por padrão é fornecido um serviço gratuíto em [https://seipro.app/ical/](https://seipro.app/ical/). Caso deseje utilizar um serviço exclusivo, consulte a Seção [Criando sua própria API de leitura](README.md#criando-sua-própria-api-de-leitura).
 
 > ![Tela Base Agenda](/img/tela-base-agenda.gif) 
 
@@ -79,6 +79,6 @@ Acesse a Aba Geral e ative a opção **Sincronizar outras agendas automaticament
 
 ## Criando sua própria API de leitura
 
-Para que seja possível interpretar as informações de compromissos agendados nos calendários no Microsoft Outlook ou Google Agenda é utilizado um serviço de API simples, disponibilizado gratuitamente no endereço [https://seipro.app/ical/](https://seipro.app/ical/).
+Para que seja possível interpretar as informações de compromissos agendados nos calendários no Microsoft Outlook ou Google Agenda a extensão **Agenda Integrada** utiliza um serviço de API simples, disponibilizado gratuitamente no endereço [https://seipro.app/ical/](https://seipro.app/ical/).
 
-Caso deseje utilizar sua própria API de leitura, utilize os arquivos da pasta [/ICAL](/ical) em um servidor de dados PHP. Aponte para o domínio criado nas configurações da Agenda: Aba Bases de Agenda >> Campo URL do serviço de integração
+Caso deseje utilizar sua própria API de leitura, baixe os arquivos da pasta [/ICAL](/ical) e disponibilize-os um servidor de dados PHP. Aponte para o domínio criado nas configurações da Agenda: Aba Bases de Agenda >> Campo URL do serviço de integração. É indispensável a utilização de um endereço externo via protocolo https.
