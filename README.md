@@ -20,7 +20,7 @@ Clique no ícone da extensão e acesse suas configurações internas. Adicione n
 
 > **Tipo de Agenda:** Selecione Microsoft Outlook ou Google Agenda.
 
-> **URL do Calendário no formato ICS:** Link disponibilizado pelo provedor de calendário. Consulte a Seção [Obtendo URL do Calendário do Microsoft Outlook ou do Google Agenda] para maiores informações.
+> **URL do Calendário no formato ICS:** Link disponibilizado pelo provedor de calendário. Consulte a Seção [Obtendo URL do Calendário do Microsoft Outlook ou do Google Agenda](README.md#obtendo-url-do-calendário-do-microsoft-outlook-ou-do-google-agenda) para maiores informações.
 
 > **URL da Agenda no Gov.br:** Link da agenda da autoridade no portal único [Gov.br](https://www.gov.br/pt-br).
 
