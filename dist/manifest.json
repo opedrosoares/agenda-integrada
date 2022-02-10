@@ -1,9 +1,9 @@
 {
   "manifest_version": 3,
-  "name": "Agendada Integrada",
-  "short_name": "Agendada Integrada",
+  "name": "Agenda Integrada",
+  "short_name": "Agenda Integrada",
   "description": "Sincroniza a Agenda de Autoridade do portal único Gov.br com os calendários do Google Agenda e Microsoft Outlook",
-  "version": "0.1.1",
+  "version": "1.0.1",
   "author": "Pedro Henrique Soares",
   "homepage_url": "https://pedrohsoaresadv.github.io/agenda-integrada/",
   "icons": {
@@ -17,8 +17,7 @@
     "open_in_tab": true
   },
   "permissions": [
-    "storage",
-    "contextMenus"
+    "storage"
   ],
   "browser_specific_settings": {
     "gecko": {
