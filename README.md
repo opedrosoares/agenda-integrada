@@ -68,3 +68,9 @@ Clique em **Salvar**
 É possível adicionar mais de uma **Base de Agenda** para sincronia, clicando no botão **Adicionar nova base**.
 
 Acesse a Aba Geral e ative a opção **Sincronizar outras agendas automaticamente (caso existam)**. Ao final do processo de sincronia a próxima Agenda cadastrada será automaticamente sincronizada.
+
+## Criando minha própria API de leitura
+
+Para que seja possível interpretar as informações de compromissos agendados nos calendários no Microsoft Outlook ou Google Agenda é utilizado um serviço de API simples, disponibilizado gratuitamente no endereço [https://seipro.app/ical/](https://seipro.app/ical/).
+
+Caso deseja utilizar sua própria API de leitura, utilize os arquivos da pasta [/ICAL](/ical) em um servidor de dados PHP. Aponte para o domínio criado nas configurações da Agenda: Aba Bases de Agenda >> Campo URL do serviço de integração
