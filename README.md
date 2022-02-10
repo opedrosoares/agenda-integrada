@@ -14,7 +14,7 @@ Instale a extensão para o Google Chrome em:
 
 Antes de iniciar o uso é necessário cadastrar nova **Base de Agenda**.
 
-Clique no ícone da extensão e acesse suas configurações internas. Adicione nova base preenchendo os seguintes campos:
+Clique no ícone da extensão e acesse suas configurações internas. Adicione uma nova base preenchendo os seguintes campos:
 
 > **Nome da Autoridade:** Título da agenda, utilizado apena para fins de referência.
 
