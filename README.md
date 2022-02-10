@@ -8,7 +8,7 @@ Criada a partir da necessidade de simplificação do registro e da divulgação 
 
 Instale a extensão para o Google Chrome em:
 
-> [https://chrome.google.com/webstore/detail/agenda-integrada/hdakgafffkflmfpejnbafpkgmlfjelcb](https://chrome.google.com/webstore/detail/agenda-integrada/hdakgafffkflmfpejnbafpkgmlfjelcb)
+> [https://chrome.google.com/webstore/detail/agendada-integrada/hdakgafffkflmfpejnbafpkgmlfjelcb](https://chrome.google.com/webstore/detail/agendada-integrada/hdakgafffkflmfpejnbafpkgmlfjelcb)
 
 ## Como utilizar?
 
