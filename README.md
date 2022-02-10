@@ -24,7 +24,9 @@ Clique no ícone da extensão e acesse suas configurações internas. Adicione n
 
 > **URL da Agenda no Gov.br:** Link da agenda da autoridade no portal único [Gov.br](https://www.gov.br/pt-br).
 
-> **URL do serviço de integração:** Link da API de leitura do arquivo ICS. Por padrão é fornecido um serviço gratuíto em [https://seipro.app/ical/](https://seipro.app/ical/). Consulte a Seção [Criando minha própria API de leitura];
+> **URL do serviço de integração:** Link da API de leitura do arquivo ICS. Por padrão é fornecido um serviço gratuíto em [https://seipro.app/ical/](https://seipro.app/ical/). Consulte a Seção [Criando minha própria API de leitura].
+
+> ![Tela Base Agenda](../img/tela-base-agenda.gif) 
 
 ## Como sincronizar?
 
@@ -33,6 +35,8 @@ Após cadastrada as informações de integração da Agenda, acesse a lista e in
 Caso a plataforma Plone não esteja logada, você será direcionado para o login do portal único [Gov.br](https://www.gov.br/pt-br).
 
 Caso a sincronização não seja iniciata automaticamente, clique no link **"Sincronizar Agenda"** disponível na barra superior da página.
+
+> ![Tela Sincronização](../img/tela-sincronizacao.gif) 
 
 A extensão irá pesquisar e cadastrar eventos 7 (sete) dias anteriores e posteriores à data atual. 
 O número de dias de pesquisa poderá ser alterado dentro das configurações internas da extensão (**Aba Geral >> Pesquisar (n) dias antes e depois da data atual**)
@@ -49,6 +53,8 @@ Selecione as permissões **Pode exibir todos os detalhes**; clique em **Publicar
 
 Copie o link do calendário em formato ICS. 
 
+> ![Tela Outlook](../img/tela-outlook.gif) 
+
 Cole nas configurações internas da extensão, Aba Bases de Agendas >> Campo URL do Calendário no formato ICS. 
 
 Clique em **Salvar**
@@ -58,6 +64,8 @@ Clique em **Salvar**
 Acesse as configurações de **Integrar agenda** do Google Agenda pelo caminho Configurações >> Configurações das minhas agendas >> Integrar agenda.
 
 Na seção **Endereço secreto no formato iCal**, clique no ícone **Copiar para a área de transferência**. 
+
+> ![Tela Google](../img/tela-google.gif) 
 
 Cole nas configurações internas da extensão, Aba Bases de Agendas >> Campo URL do Calendário no formato ICS. 
 
