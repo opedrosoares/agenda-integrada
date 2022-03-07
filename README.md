@@ -130,6 +130,6 @@ Caso deseje utilizar sua própria API de leitura, baixe os arquivos da pasta [/I
 
 ## Deseja contribuir?
 
-Caso deseja reportar um erro ou solicitar um recurso, acesse [Issue](https://github.com/pedrohsoaresadv/sei-legis/issues) no [Projeto GitHub](https://github.com/pedrohsoaresadv/sei-legis/) e adicione sua requisição.
+Caso deseja reportar um erro ou solicitar um recurso, acesse [Issue](https://github.com/pedrohsoaresadv/agenda-integrada/issues) no [Projeto GitHub](https://github.com/pedrohsoaresadv/agenda-integrada/) e adicione sua requisição.
 
 Ou envie um e-mail para [pedrohsoares.adv@gmail.com](mailto:pedrohsoares.adv@gmail.com)
